@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>閃耀時刻 - 2026 Hualien Girls' Day</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fff4f8",
+                        "error-dim": "#a70138",
+                        "primary": "#b10072",
+                        "secondary-dim": "#5819db",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#edc600",
+                        "secondary-container": "#d8caff",
+                        "on-primary-container": "#4a002d",
+                        "tertiary-fixed": "#fdd400",
+                        "primary-fixed-dim": "#ff4aae",
+                        "on-tertiary": "#fff2ce",
+                        "error": "#b41340",
+                        "primary-fixed": "#ff6cb6",
+                        "error-container": "#f74b6d",
+                        "surface": "#fff4f8",
+                        "outline-variant": "#d09ec0",
+                        "secondary-fixed-dim": "#cabaff",
+                        "on-secondary-container": "#5000d2",
+                        "inverse-primary": "#ff42ac",
+                        "surface-tint": "#b10072",
+                        "on-tertiary-fixed-variant": "#645300",
+                        "on-error": "#ffefef",
+                        "surface-container-high": "#ffd7f0",
+                        "tertiary-container": "#fdd400",
+                        "surface-dim": "#ffc2ec",
+                        "on-background": "#46223e",
+                        "surface-container-low": "#ffecf6",
+                        "surface-variant": "#ffcfef",
+                        "inverse-on-surface": "#be8eb0",
+                        "on-tertiary-fixed": "#433700",
+                        "on-primary-fixed": "#000000",
+                        "secondary-fixed": "#d8caff",
+                        "primary-container": "#ff6cb6",
+                        "on-tertiary-container": "#594a00",
+                        "on-surface-variant": "#784e6c",
+                        "on-secondary-fixed": "#3b00a0",
+                        "on-secondary": "#f7f0ff",
+                        "tertiary": "#6d5a00",
+                        "tertiary-dim": "#5f4e00",
+                        "on-primary-fixed-variant": "#5b0038",
+                        "primary-dim": "#9b0063",
+                        "on-secondary-fixed-variant": "#591bdc",
+                        "outline": "#956989",
+                        "surface-container-highest": "#ffcfef",
+                        "secondary": "#652fe7",
+                        "surface-container": "#ffdff2",
+                        "on-primary": "#ffeff3",
+                        "inverse-surface": "#20031b",
+                        "on-surface": "#46223e",
+                        "on-error-container": "#510017",
+                        "background": "#fff4f8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .shining-gradient {
+            background: linear-gradient(135deg, #b10072 0%, #652fe7 100%);
+        }
+        .ambient-glow {
+            box-shadow: 0 20px 40px rgba(101, 47, 231, 0.06);
+        }
+        .video-overlay {
+            background: linear-gradient(0deg, rgba(74, 0, 45, 0.6) 0%, rgba(74, 0, 45, 0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-fuchsia-950/70 backdrop-blur-[20px] shadow-[0_10px_40px_-15px_rgba(101,47,231,0.06)] flex justify-between items-center px-8 h-20 max-w-full">
+<div class="text-xl font-black text-fuchsia-900 dark:text-fuchsia-50 tracking-tighter font-headline">
+            2026 Hualien Girls' Day
+        </div>
+<div class="hidden md:flex gap-8 items-center font-headline font-bold text-base">
+<a class="text-fuchsia-800/70 dark:text-fuchsia-200/70 hover:text-pink-600 transition-colors" href="#">活動理念</a>
+<a class="text-fuchsia-800/70 dark:text-fuchsia-200/70 hover:text-pink-600 transition-colors" href="#">活動分類</a>
+<a class="text-fuchsia-800/70 dark:text-fuchsia-200/70 hover:text-pink-600 transition-colors" href="#">活動報名</a>
+<a class="text-fuchsia-800/70 dark:text-fuchsia-200/70 hover:text-pink-600 transition-colors" href="#">問卷抽獎</a>
+<a class="text-pink-600 dark:text-pink-400 border-b-2 border-pink-500" href="#">影音專區</a>
+<a class="text-fuchsia-800/70 dark:text-fuchsia-200/70 hover:text-pink-600 transition-colors" href="#">聯繫我們</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20">
+            立即報名
+        </button>
+</nav>
+<main class="pt-32 pb-24 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
+<!-- Hero Title Section -->
+<header class="mb-16 text-center relative">
+<div class="absolute -top-12 left-1/2 -translate-x-1/2 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[120px] text-tertiary-fixed" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h1 class="text-6xl md:text-7xl font-black font-headline tracking-tighter text-on-background mb-4">
+                閃耀時刻
+            </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto">
+                重溫每一場關於夢想與勇氣的聚會，看見女孩們如何在這裡散發獨一無二的光芒。
+            </p>
+</header>
+<!-- Featured Video Container -->
+<section class="mb-24 relative">
+<!-- Decorative Elements -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-secondary-container/30 blur-3xl rounded-full"></div>
+<div class="absolute -left-20 bottom-0 w-64 h-64 bg-primary-container/20 blur-3xl rounded-full"></div>
+<div class="relative z-10 glass-panel rounded-xl p-4 md:p-8 ambient-glow">
+<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-highest group relative">
+<!-- Representing YouTube Player with a themed placeholder/overlay -->
+<img alt="Main Recap Video" class="w-full h-full object-cover" data-alt="Cinematic shot of a group of diverse young women laughing and talking in a modern workshop space with soft warm lighting and artistic composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOR8WMJeBZckuXO-ASdpdDgxCEAtw-10Eu_6FkBIsNMQlheP0e9_RuiNTlGyDx5ISLPxysGfdjrm7O7ijVx-wOaAdIHOyHpELACZ2__7Nn6V-gTmgqgR38F1lVuAieDLiFDEiyYSNUDgC0IJX0UjNM9Tcp6rjelgGZYu9hVssQIDE1XdS2XNPvw8-SD_ylllITQ-dgc-lDFoU1W91RTenH7kjTuXeltbUzEDJ9oLAvPIpOr9NfHM4MFIpbdQkSfbkJIPYS0YwWIZpv"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all duration-500 cursor-pointer">
+<div class="w-24 h-24 rounded-full bg-primary/90 flex items-center justify-center text-on-primary shadow-2xl scale-100 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-5xl" data-icon="play_arrow" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 p-8 video-overlay text-white">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed text-xs font-bold rounded-full mb-3 inline-block">精選推薦</span>
+<h2 class="text-3xl font-bold font-headline mb-2">2026 花蓮女孩日：夢想啟航紀錄片</h2>
+<p class="text-white/80">完整收錄開幕式精采瞬間與導師工作坊精彩對話。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Archives Grid -->
+<section>
+<div class="flex justify-between items-end mb-10 px-4">
+<div>
+<h3 class="text-3xl font-bold font-headline text-primary mb-2">影音存檔</h3>
+<p class="text-on-surface-variant">活動花絮、專題講座與女孩心聲</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</button>
+<button class="w-12 h-12 rounded-full bg-surface-container-low flex items-center justify-center text-primary hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined" data-icon="filter_list">filter_list</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:scale-[1.02] transition-all duration-300 ambient-glow">
+<div class="relative aspect-[16/9]">
+<img alt="Workshop Recap" class="w-full h-full object-cover" data-alt="A close-up of a vibrant digital art workshop with girls using tablets, colorful screen reflections on their faces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWdZWvwZbpunPQYtQoY4DTe-B_PBJuMK3REl4DRXKZfSvUf3iZk0cgd9-YVAl1weUY4nGvw9ps4NZoF9PF3m1CwWwQHHQXVBuqUOF-_JMBbel-9orpEqbeiDTYf3ur6_uRhABPUfmdWLdKOMwlOhwp-aTIBjKkFIlWuM_r24Z0KzRa1Oi3unosx6_8UfMy7CDxdUyAtlDfo-43GeHwCmAtQfYcNWAeFg49LDMpGg1hOAOWSJSSucaU_XnZubsJdDUAZI3_HZ3m9dws"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">12:45</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] uppercase font-bold tracking-widest text-secondary px-2 py-0.5 bg-secondary-container rounded">工作坊</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2 line-clamp-2">數位藝術與女孩：科技如何賦予創造力</h4>
+<p class="text-sm text-on-surface-variant mb-4">深入了解數位工具如何成為女孩表達自我的新平台。</p>
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="calendar_month">calendar_month</span>
+                            2026.03.15
+                        </div>
+</div>
+</div>
+<!-- Video Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:scale-[1.02] transition-all duration-300 ambient-glow">
+<div class="relative aspect-[16/9]">
+<img alt="Panel Discussion" class="w-full h-full object-cover" data-alt="Group of confident young women sitting in a semi-circle during a leadership panel discussion in a brightly lit auditorium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaDkNG9lJJO6CJiqI8R6KaEH9NiiVcTaMXLX7I1RtFKcYGHaHkKMitxcNlYhE-4KZHUznBOgAIsryT70qKiJeeuwRBgrbu8ckFmNGJj2HSnPBlE5pfZTZaoHZW-N_xG_3s5zYMBNif_0BvsEaMLBGQ9uPjhhPTsnD7e5BoBBTP8b7MIeJefWTVKoYJPqlYBHufiwbzPOtYtASw8NDmRTHLriQsES3y8LChezaxkQnxhWR62B5IRMnVfGPa5WUNEeAw2bR0Zk8YX9Na"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">24:10</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] uppercase font-bold tracking-widest text-primary px-2 py-0.5 bg-primary-container rounded">論壇</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2 line-clamp-2">領袖力對談：勇敢定義妳的未來</h4>
+<p class="text-sm text-on-surface-variant mb-4">邀請三位不同領域的女性領袖分享職場與生命經驗。</p>
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="calendar_month">calendar_month</span>
+                            2026.03.14
+                        </div>
+</div>
+</div>
+<!-- Video Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:scale-[1.02] transition-all duration-300 ambient-glow">
+<div class="relative aspect-[16/9]">
+<img alt="Behind the scenes" class="w-full h-full object-cover" data-alt="Casual behind-the-scenes moments of event staff and volunteers setting up a colorful festival venue at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA14QIW8wi9lHOvDO5-NSiiJ38uL2rUYX8ClkvKoifN-eq8BwLE-UwICfDaP6dNyfb2SzIdjwyuQbpOdytoI1tJW_NNp2zKMKnHTwenh1fkLhH9TueVqGgHFJOjy-BvRR1cCvwoO3Orq8FyaEf5Knd_jVCMkulTcLqdnTcirqAKfjM3HSNzYN1DdoaMPQVkvqMz1Kvy0w4OLmvyYSgmph8uKxY3zuXF5Jh0E_FpliQOkaM07I7fCVa1hFJkQO92RTCWvcLDXkoEpupr"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">05:22</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] uppercase font-bold tracking-widest text-tertiary px-2 py-0.5 bg-tertiary-container rounded">幕後花絮</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2 line-clamp-2">那些未剪輯的笑聲：工作人員的一天</h4>
+<p class="text-sm text-on-surface-variant mb-4">帶你走進女孩日背後的策劃與熱血準備過程。</p>
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="calendar_month">calendar_month</span>
+                            2026.03.12
+                        </div>
+</div>
+</div>
+<!-- Video Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:scale-[1.02] transition-all duration-300 ambient-glow">
+<div class="relative aspect-[16/9]">
+<img alt="Student Interview" class="w-full h-full object-cover" data-alt="Portrait of a young woman smiling and holding a trophy with soft bokeh lights in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA74fY5Rei8P6ka9EkWbygvFBTNJkzWckyZOS4biSCXIg9ufFCT45kqyKIgvfP8su0DbcJdfBQIbiw9xbcVoajZ2fwog5oSXE3LtfULpFUak9GsSXhytwsioL79QArV5u86ibIwaYkIbBPPITnxDyH8Hc1blnF7jEoZPhHTlu0YY6Dwah8WB2-AQJivykaDyMEk-1Mm0Bh2FOnN1nUBozWm0DAQE1NRCSWzGvrraw6mwppnVoP_fi3Lb8zya6V8REEdel1jLLCbZzHQ"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">08:15</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] uppercase font-bold tracking-widest text-primary px-2 py-0.5 bg-primary-container rounded">專訪</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2 line-clamp-2">夢想的模樣：花蓮在地女孩的心聲</h4>
+<p class="text-sm text-on-surface-variant mb-4">聽聽在地女孩對未來的憧憬以及她們眼中的花蓮。</p>
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="calendar_month">calendar_month</span>
+                            2026.03.10
+                        </div>
+</div>
+</div>
+<!-- Video Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden group hover:scale-[1.02] transition-all duration-300 ambient-glow">
+<div class="relative aspect-[16/9]">
+<img alt="Festival Highlights" class="w-full h-full object-cover" data-alt="Dynamic shot of a crowd of people jumping at a outdoor festival with colorful confetti in the air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6kQAWDdQjqszVoQ2XnDviZnJhmU9vomdoAJVH-2Yt9WpW8PqDOxhH3OcKRuTQaHs-XdkuabgjC4jmFxkuGSrG2QIkonHIN1LT0lckkFsUCWrgLEdfnzHcUwAobAKj1n6WndoLxQRbc2kiHjz-BJ5otV47Uy63rYcXK9y6mOniQvyq-Aq-XK8ar4-0mUu-iu3eCwFB7l9F3JZPCKF_gjNkXDLsvDst9hH1dxbY9ZshxzwGOJEtEhXK0YpUwRKzEpYmkTtdznIYSNRC"/>
+<div class="absolute inset-0 bg-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl" data-icon="play_circle" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div class="absolute bottom-3 right-3 bg-black/70 text-white text-xs px-2 py-1 rounded">03:45</div>
+</div>
+<div class="p-6">
+<div class="flex gap-2 mb-3">
+<span class="text-[10px] uppercase font-bold tracking-widest text-secondary px-2 py-0.5 bg-secondary-container rounded">快訊</span>
+</div>
+<h4 class="text-lg font-bold font-headline mb-2 line-clamp-2">活動精華 60 秒：感受那份純粹的快樂</h4>
+<p class="text-sm text-on-surface-variant mb-4">快節奏剪輯，帶你一分鐘看遍女孩日的所有精彩。</p>
+<div class="flex items-center text-xs text-on-surface-variant font-medium">
+<span class="material-symbols-outlined text-sm mr-1" data-icon="calendar_month">calendar_month</span>
+                            2026.03.08
+                        </div>
+</div>
+</div>
+<!-- Video Card 6 - CTA/Coming Soon -->
+<div class="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl border-2 border-dashed border-primary/20 flex flex-col items-center justify-center p-8 text-center group">
+<div class="w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary mb-4 group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="add_circle">add_circle</span>
+</div>
+<h4 class="text-xl font-bold font-headline mb-2">更多影片上傳中</h4>
+<p class="text-sm text-on-surface-variant mb-6">我們正在整理更多精彩內容，敬請期待！</p>
+<button class="px-6 py-2 border-2 border-primary text-primary rounded-full font-bold hover:bg-primary hover:text-on-primary transition-all">
+                        訂閱我們的 YouTube
+                    </button>
+</div>
+</div>
+</section>
+<!-- Newsletter/Interaction section -->
+<section class="mt-24 bg-surface-container rounded-xl p-8 md:p-12 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl" data-icon="movie_filter">movie_filter</span>
+</div>
+<h3 class="text-3xl font-bold font-headline mb-4">不想錯過任何一個精彩瞬間？</h3>
+<p class="text-on-surface-variant mb-8 max-w-xl mx-auto">留下您的電子信箱，我們將在有新影片上傳時第一時間通知您。</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-grow rounded-full border-none bg-surface-container-highest px-6 py-3 focus:ring-2 focus:ring-secondary/20 transition-all outline-none" placeholder="您的電子信箱" type="email"/>
+<button class="shining-gradient text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg shadow-secondary/20" type="submit">
+                    訂閱通知
+                </button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-fuchsia-50 dark:bg-fuchsia-950 w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8 font-body text-sm">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-bold text-fuchsia-900 dark:text-fuchsia-100">2026 Hualien Girls' Day</div>
+<p class="text-fuchsia-900/60 dark:text-fuchsia-300/60">© 2026 Hualien Girls' Day. Let your dreams be what makes you shine.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-fuchsia-900/60 dark:text-fuchsia-300/60 hover:text-pink-500 transition-colors" href="#">活動理念</a>
+<a class="text-fuchsia-900/60 dark:text-fuchsia-300/60 hover:text-pink-500 transition-colors" href="#">常見問題</a>
+<a class="text-fuchsia-900/60 dark:text-fuchsia-300/60 hover:text-pink-500 transition-colors" href="#">隱私權政策</a>
+<a class="text-fuchsia-900/60 dark:text-fuchsia-300/60 hover:text-pink-500 transition-colors" href="#">聯繫我們</a>
+</div>
+</footer>
+</body></html>
