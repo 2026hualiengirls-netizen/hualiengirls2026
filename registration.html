@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>活動報名 | 2026 Hualien Girls' Day</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#fff4f8",
+                        "error-dim": "#a70138",
+                        "primary": "#b10072",
+                        "secondary-dim": "#5819db",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#edc600",
+                        "secondary-container": "#d8caff",
+                        "on-primary-container": "#4a002d",
+                        "tertiary-fixed": "#fdd400",
+                        "primary-fixed-dim": "#ff4aae",
+                        "on-tertiary": "#fff2ce",
+                        "error": "#b41340",
+                        "primary-fixed": "#ff6cb6",
+                        "error-container": "#f74b6d",
+                        "surface": "#fff4f8",
+                        "outline-variant": "#d09ec0",
+                        "secondary-fixed-dim": "#cabaff",
+                        "on-secondary-container": "#5000d2",
+                        "inverse-primary": "#ff42ac",
+                        "surface-tint": "#b10072",
+                        "on-tertiary-fixed-variant": "#645300",
+                        "on-error": "#ffefef",
+                        "surface-container-high": "#ffd7f0",
+                        "tertiary-container": "#fdd400",
+                        "surface-dim": "#ffc2ec",
+                        "on-background": "#46223e",
+                        "surface-container-low": "#ffecf6",
+                        "surface-variant": "#ffcfef",
+                        "inverse-on-surface": "#be8eb0",
+                        "on-tertiary-fixed": "#433700",
+                        "on-primary-fixed": "#000000",
+                        "secondary-fixed": "#d8caff",
+                        "primary-container": "#ff6cb6",
+                        "on-tertiary-container": "#594a00",
+                        "on-surface-variant": "#784e6c",
+                        "on-secondary-fixed": "#3b00a0",
+                        "on-secondary": "#f7f0ff",
+                        "tertiary": "#6d5a00",
+                        "tertiary-dim": "#5f4e00",
+                        "on-primary-fixed-variant": "#5b0038",
+                        "primary-dim": "#9b0063",
+                        "on-secondary-fixed-variant": "#591bdc",
+                        "outline": "#956989",
+                        "surface-container-highest": "#ffcfef",
+                        "secondary": "#652fe7",
+                        "surface-container": "#ffdff2",
+                        "on-primary": "#ffeff3",
+                        "inverse-surface": "#20031b",
+                        "on-surface": "#46223e",
+                        "on-error-container": "#510017",
+                        "background": "#fff4f8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bouncy-hover:hover {
+            transform: translateY(-4px);
+        }
+        .prism-gradient {
+            background: linear-gradient(135deg, #b10072 0%, #652fe7 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+        }
+        .ambient-glow {
+            box-shadow: 0 20px 40px -10px rgba(101, 47, 231, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 h-20 px-8 flex justify-between items-center bg-white/70 backdrop-blur-[20px] shadow-[0_10px_40px_-15px_rgba(101,47,231,0.06)]">
+<div class="text-xl font-black text-fuchsia-900 tracking-tighter font-headline">2026 Hualien Girls' Day</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-fuchsia-800/70 hover:text-pink-600 transition-colors font-headline font-bold text-base hover:scale-105" href="#">活動理念</a>
+<a class="text-fuchsia-800/70 hover:text-pink-600 transition-colors font-headline font-bold text-base hover:scale-105" href="#">活動分類</a>
+<a class="text-pink-600 border-b-2 border-pink-500 font-headline font-bold text-base hover:scale-105" href="#">活動報名</a>
+<a class="text-fuchsia-800/70 hover:text-pink-600 transition-colors font-headline font-bold text-base hover:scale-105" href="#">問卷抽獎</a>
+<a class="text-fuchsia-800/70 hover:text-pink-600 transition-colors font-headline font-bold text-base hover:scale-105" href="#">影音專區</a>
+<a class="text-fuchsia-800/70 hover:text-pink-600 transition-colors font-headline font-bold text-base hover:scale-105" href="#">聯繫我們</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-base transition-all duration-300 hover:scale-105 shadow-sm active:scale-95">
+            立即報名
+        </button>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden px-8 py-24 md:py-32 flex flex-col items-center text-center">
+<div class="absolute top-0 left-0 w-full h-full -z-10 opacity-20">
+<div class="absolute top-1/4 left-10 w-64 h-64 bg-secondary rounded-full blur-[120px]"></div>
+<div class="absolute bottom-1/4 right-10 w-80 h-80 bg-primary rounded-full blur-[150px]"></div>
+</div>
+<!-- Anime Decorative Elements -->
+<div class="absolute top-20 right-[-5%] w-72 h-72 md:w-96 md:h-96 opacity-90 hidden lg:block">
+<img class="w-full h-full object-contain" data-alt="dynamic anime girl illustration with flowing hair holding a digital prism representing future and dreams in soft pink and purple" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJEf5yiyihtVDL-63sVoSjzOsB43bdq5c3zdNlfgNZAzyEQPxeXNexZCxIVMACA6XWmnROjDLliBlZMmkQRpwlAJVCr3D3OvndkJTg528LIZ9G5q42FlOmJaF5OJOuavZzlZj6qvc9zAsqCf4R3v43LDCMPSGHQBaLncr-A-1J2y44QOYLuIyxewSU4ysd0ZwiTQVoIHP8RftgF-Ii00iIjC05xY5zL_3C4N6ovxbEqU2GiqcnCU04FjvDNw9d5h62fQ_uaOA4XAQx"/>
+</div>
+<div class="max-w-4xl">
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl leading-tight tracking-tight mb-6">
+                    啟動妳的 <span class="text-primary italic">閃耀之旅</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                    2026 花蓮女力節，讓夢想成為妳閃耀的理由。只需簡單四步驟，立即開啟專屬於妳的成長舞台。
+                </p>
+</div>
+</section>
+<!-- Registration Steps -->
+<section class="px-8 pb-32">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+<!-- Step 1 -->
+<div class="group relative flex flex-col gap-6 p-8 bg-surface-container-lowest rounded-xl ambient-glow transition-all duration-300 hover:scale-[1.02] hover:bg-surface-bright">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline font-black text-2xl">01</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3">選擇場次</h3>
+<p class="text-on-surface-variant leading-relaxed">瀏覽各類別精彩活動，包含數位創意、永續發展與職涯工作坊，挑選妳最感興趣的主題。</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="group relative flex flex-col gap-6 p-8 bg-surface-container-low rounded-xl ambient-glow transition-all duration-300 hover:scale-[1.02] hover:bg-surface-bright">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-headline font-black text-2xl">02</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3">點擊報名</h3>
+<p class="text-on-surface-variant leading-relaxed">在喜歡的活動下方點擊「立即報名」，系統將自動引導妳至 Accupass 官方活動頁面。</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="group relative flex flex-col gap-6 p-8 bg-surface-container-highest rounded-xl ambient-glow transition-all duration-300 hover:scale-[1.02] hover:bg-surface-bright">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center font-headline font-black text-2xl">03</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3">填寫資料</h3>
+<p class="text-on-surface-variant leading-relaxed">於 Accupass 平台登入並完成基本報名資料填寫，別忘了勾選妳的午餐偏好與聯絡資訊。</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="group relative flex flex-col gap-6 p-8 bg-surface-container-high rounded-xl ambient-glow transition-all duration-300 hover:scale-[1.02] hover:bg-surface-bright">
+<div class="w-16 h-16 rounded-full bg-secondary-dim text-on-secondary flex items-center justify-center font-headline font-black text-2xl">04</div>
+<div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3">確認成功</h3>
+<p class="text-on-surface-variant leading-relaxed">完成報名後將收到電子郵件確認。活動當天攜帶 QR Code 到現場完成報到即可！</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-8 pb-32">
+<div class="max-w-5xl mx-auto rounded-xl prism-gradient p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12">
+<!-- Abstract Geometric Decoration -->
+<div class="absolute -top-10 -right-10 w-64 h-64 border-[40px] border-white/10 rounded-full"></div>
+<div class="absolute bottom-[-50px] left-[-50px] w-48 h-48 bg-tertiary-fixed/20 rounded-full"></div>
+<div class="relative z-10 text-center md:text-left flex-1">
+<h2 class="font-headline font-black text-4xl md:text-5xl text-on-primary mb-6">準備好發光了嗎？</h2>
+<p class="text-on-primary/80 text-lg mb-8 max-w-md">加入全台最熱血的少女慶典，與全花蓮的優秀女孩們一起創造不可思議的 2026。</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-white text-primary px-10 py-4 rounded-full font-headline font-extrabold text-xl flex items-center justify-center gap-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-xl" href="https://www.accupass.com" target="_blank">
+                            Register on Accupass
+                            <span class="material-symbols-outlined">rocket_launch</span>
+</a>
+</div>
+</div>
+<div class="relative z-10 w-full max-w-[320px] aspect-square rounded-xl overflow-hidden bg-white/20 backdrop-blur-md p-4">
+<div class="w-full h-full bg-white rounded-lg flex flex-col items-center justify-center p-6 text-center">
+<div class="w-48 h-48 mb-4">
+<img class="w-full h-full object-contain" data-alt="high quality minimal QR code for event registration on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQOykfLj45tMzqrWNfti9Y8WF2Tt4jvvFvwwb1IXtifEKWFyNdc8HT6o5tpLmtQbRQLkAbQ-hp4iRQscBMTEHN9F6xcG6_Kf6Qmq-UlxGA9jK1Q8N5Z8c5hDFYCCxUNSchZhF0c-_EU074D4Iz-51RM9s9z7GlSLgJsE1JWMkoQLemtAWtzqVol9cgoABhue1F9Me_O-74AGdquV4_omepdTsW8L77Dq9eVTjhucTwTECCiWCoC0avyMuUoPWvQJMpb5iqh3gPXS1B"/>
+</div>
+<span class="text-primary font-bold text-sm">掃描或點擊進入 Accupass 報名頁面</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Registration FAQ/Note -->
+<section class="px-8 pb-24">
+<div class="max-w-4xl mx-auto bg-surface-container-low rounded-xl p-10">
+<div class="flex items-start gap-6">
+<div class="bg-primary-container p-3 rounded-full text-on-primary-container">
+<span class="material-symbols-outlined">info</span>
+</div>
+<div>
+<h4 class="font-headline font-bold text-xl mb-4">報名注意事項</h4>
+<ul class="space-y-4 text-on-surface-variant leading-relaxed">
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                                所有活動均為免費參加，但需預先完成報名以保留名額。
+                            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                                單場次名額有限，額滿為止；部分熱門工作坊將依報名順序錄取。
+                            </li>
+<li class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+                                若報名後無法參加，請務必於活動前三天透過 Accupass 取消報名，以便釋出名額。
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-fuchsia-50 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 w-full">
+<div class="text-lg font-bold text-fuchsia-900 font-headline">2026 Hualien Girls' Day</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-fuchsia-900/60 hover:text-pink-500 transition-colors font-body text-sm" href="#">活動理念</a>
+<a class="text-fuchsia-900/60 hover:text-pink-500 transition-colors font-body text-sm" href="#">常見問題</a>
+<a class="text-fuchsia-900/60 hover:text-pink-500 transition-colors font-body text-sm" href="#">隱私權政策</a>
+<a class="text-fuchsia-900/60 hover:text-pink-500 transition-colors font-body text-sm" href="#">聯繫我們</a>
+</div>
+<div class="text-fuchsia-900/60 font-body text-sm text-center md:text-right">
+                © 2026 Hualien Girls' Day. Let your dreams be what makes you shine.
+            </div>
+</div>
+</footer>
+</body></html>
