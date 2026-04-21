@@ -1,55 +1,155 @@
-<section id="about" class="py-24 bg-surface-container-low relative">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-        <h2 class="text-4xl font-extrabold gradient-text font-headline mb-6">發掘妳的無限潛能</h2>
-        <p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-3xl mx-auto">
-            響應聯合國重視投資及培力女孩，2026 花蓮女孩日旨在促使女孩了解自身權益。我們將透過一系列的工作坊與主活動，打破刻板印象對於女孩發展的種種限制，拓展更多元的性別視野，讓每位女孩都能勇敢追求非傳統領域的夢想。
-        </p>
-    </div>
-</section>
+<!DOCTYPE html>
 
-<section id="activities" class="py-24 bg-surface relative">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-extrabold gradient-text font-headline mb-4">系列活動一覽</h2>
-            <p class="text-on-surface-variant">豐富的女力培力課程與盛大慶典，等妳來探索！</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow ambient-shadow-hover border border-surface-container-high transition-all">
-                <div class="w-14 h-14 bg-primary-container rounded-full flex items-center justify-center mb-6 text-primary">
-                    <span class="material-symbols-outlined text-3xl">construction</span>
-                </div>
-                <h3 class="text-2xl font-bold text-on-background mb-3 font-headline">女力培力工作坊</h3>
-                <p class="text-on-surface-variant mb-6 font-body">聚焦「非傳統領域女參與與培力」，涵蓋女性參與 STEM (科技、木工、建築等)、數位性別暴力防制及女性領導力等主題。</p>
-                <a href="#registration" class="text-primary font-bold hover:text-primary-dim transition-colors flex items-center gap-1">查看場次與報名 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+<html lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2026 花蓮女孩日</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed-variant": "#645300",
+                        "tertiary-fixed": "#fdd400",
+                        "secondary-fixed": "#d8caff",
+                        "on-secondary": "#f7f0ff",
+                        "on-surface-variant": "#784e6c",
+                        "primary": "#b10072",
+                        "surface-variant": "#ffcfef",
+                        "primary-container": "#ff6cb6",
+                        "inverse-surface": "#20031b",
+                        "on-primary-container": "#4a002d",
+                        "surface-container-low": "#ffecf6",
+                        "on-error": "#ffefef",
+                        "tertiary-fixed-dim": "#edc600",
+                        "on-primary": "#ffeff3",
+                        "on-secondary-fixed-variant": "#591bdc",
+                        "surface-bright": "#fff4f8",
+                        "on-tertiary": "#fff2ce",
+                        "error-container": "#f74b6d",
+                        "inverse-primary": "#ff42ac",
+                        "outline": "#956989",
+                        "primary-fixed-dim": "#ff4aae",
+                        "secondary-fixed-dim": "#cabaff",
+                        "on-primary-fixed-variant": "#5b0038",
+                        "surface-container-high": "#ffd7f0",
+                        "inverse-on-surface": "#be8eb0",
+                        "outline-variant": "#d09ec0",
+                        "on-tertiary-container": "#594a00",
+                        "surface": "#fff4f8",
+                        "error": "#b41340",
+                        "on-primary-fixed": "#000000",
+                        "background": "#fff4f8",
+                        "secondary-dim": "#5819db",
+                        "tertiary-dim": "#5f4e00",
+                        "on-background": "#46223e",
+                        "primary-dim": "#9b0063",
+                        "on-tertiary-fixed": "#433700",
+                        "surface-tint": "#b10072",
+                        "on-surface": "#46223e",
+                        "tertiary-container": "#fdd400",
+                        "surface-container-highest": "#ffcfef",
+                        "surface-container": "#ffdff2",
+                        "secondary-container": "#d8caff",
+                        "surface-dim": "#ffc2ec",
+                        "secondary": "#652fe7",
+                        "tertiary": "#6d5a00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#510017",
+                        "on-secondary-fixed": "#3b00a0",
+                        "on-secondary-container": "#5000d2",
+                        "error-dim": "#a70138",
+                        "primary-fixed": "#ff6cb6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Be Vietnam Pro"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #fff4f8; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(255, 244, 248, 0.7); backdrop-filter: blur(20px); }
+        .gradient-text { background: linear-gradient(135deg, #b10072, #652fe7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .ambient-shadow { box-shadow: 0 20px 40px rgba(101, 47, 231, 0.06); }
+        .ambient-shadow-hover:hover { box-shadow: 0 30px 60px rgba(101, 47, 231, 0.1); transform: scale(1.02); transition: all 0.3s ease; }
+        .btn-bounce:hover { transform: translateY(-4px); transition: transform 0.2s ease-in-out; }
+    </style>
+</head>
+<body class="text-on-background relative overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-none shadow-pink-500/10 shadow-xl transition-all">
+<div class="flex justify-between items-center px-8 h-20 max-w-full mx-auto">
+<div class="text-2xl font-black gradient-text tracking-tight font-headline">
+                2026 花蓮女孩日
             </div>
-
-            <div class="bg-surface-container-lowest rounded-2xl p-8 ambient-shadow ambient-shadow-hover border border-surface-container-high transition-all">
-                <div class="w-14 h-14 bg-secondary-container rounded-full flex items-center justify-center mb-6 text-secondary">
-                    <span class="material-symbols-outlined text-3xl">festival</span>
-                </div>
-                <h3 class="text-2xl font-bold text-on-background mb-3 font-headline">女孩日主活動 (音樂x市集x展覽)</h3>
-                <p class="text-on-surface-variant mb-6 font-body">結合知名女性歌手展演、女力短講、在地女性職人市集，以及女孩權益互動展覽，打造最盛大的女孩專屬慶典！</p>
-                <a href="#registration" class="text-secondary font-bold hover:text-secondary-dim transition-colors flex items-center gap-1">了解活動亮點 <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
-            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-pink-600 border-b-4 border-pink-500 pb-1 font-bold text-sm tracking-wide" href="#about">活動理念</a>
+<a class="text-slate-600 hover:text-pink-500 font-medium text-sm tracking-wide transition-colors" href="#activities">活動分類</a>
+<a class="text-slate-600 hover:text-pink-500 font-medium text-sm tracking-wide transition-colors" href="#registration">活動報名</a>
+<a class="text-slate-600 hover:text-pink-500 font-medium text-sm tracking-wide transition-colors" href="#survey">問卷抽獎</a>
+<a class="text-slate-600 hover:text-pink-500 font-medium text-sm tracking-wide transition-colors" href="#gallery">影音專區</a>
+<a class="text-slate-600 hover:text-pink-500 font-medium text-sm tracking-wide transition-colors" href="#contact">聯繫我們</a>
+</div>
+<div class="hidden md:flex">
+<a class="bg-gradient-to-r from-primary to-secondary text-on-primary px-6 py-2 rounded-full font-bold text-sm hover:scale-105 transition-transform duration-300 shadow-lg btn-bounce" href="#registration">立即報名</a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-24 lg:pt-48 lg:pb-40 overflow-hidden bg-surface flex items-center min-h-[921px]">
+<!-- Decorative Elements -->
+<div class="absolute top-20 left-10 w-32 h-32 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-50"></div>
+<div class="absolute bottom-20 right-10 w-48 h-48 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8 z-20">
+<h1 class="text-5xl lg:text-7xl font-extrabold tracking-tight text-on-background font-headline leading-tight">
+<span class="gradient-text block mb-2">2026</span> 
+                    花蓮女孩日
+                </h1>
+<p class="text-2xl font-medium text-primary font-headline">讓妳發光的不只是夢想</p>
+<p class="text-lg text-on-surface-variant font-body max-w-lg leading-relaxed">
+                    加入我們，在星空下點亮彼此的光芒。這是一場專屬於妳的盛典，探索潛能，綻放獨特光彩。
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold text-center btn-bounce shadow-[0_10px_20px_rgba(177,0,114,0.3)]" href="#registration">立即報名 (Accupass)</a>
+<a class="bg-secondary-container/10 text-secondary border border-secondary/20 px-8 py-4 rounded-full font-bold text-center hover:bg-secondary-container/30 transition-colors btn-bounce" href="#activities">探索活動</a>
+</div>
+</div>
+<div class="relative z-10 w-full h-[500px] lg:h-[600px] rounded-xl overflow-hidden ambient-shadow bg-surface-container-low flex items-center justify-center">
+<img alt="Three energetic and cheerful Japanese anime high school girls, vibrant and youthful, school uniforms with modern stylish twists, 2026 Hualien Girls' Day theme" class="absolute inset-0 w-full h-full object-cover opacity-100" data-alt="Three energetic and cheerful Japanese anime high school girls, vibrant and youthful, school uniforms with modern stylish twists, detailed anime art style, bright and clear colors, sunny outdoor school or city background, high-quality digital illustration, fine line work, capturing a sense of friendship and vitality, 2026 Hualien Girls' Day theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYSJaDRB6JS9a0FbnNQoOocqqLU-OD4lqR5gyghqTZoNXECsQ9xo9P4ZIGMqisLATFyyWn6xbQnVcNNaB9sUNnVayhxyzUs8cxTGR9kAtzUaF7BWeYqi8ZK_nZICSnahtDvCrY0OfbfangOlMZD3AsIssRIQjOFiWwMJgeInhRK98GdmHR8HNHW2xY-iKYpGlYsFAOreWrKx0_idM9-lVfqCaHmMhGknBQUZIBELiZjyn5Cr3OZHYyffFII9Cyyj-D3hSdiG6IdiWK"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-tint/20 to-transparent"></div>
+</div>
+</div>
+</header>
+<!-- Footer -->
+<footer class="bg-pink-50 py-12 px-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center mt-32">
+<div class="font-bold text-pink-700 text-xl font-headline tracking-tight">
+            2026 花蓮女孩日
         </div>
-    </div>
-</section>
-
-<section id="survey" class="py-24 bg-gradient-to-br from-primary-container/20 to-secondary-container/20 relative">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-        <span class="bg-white text-primary px-4 py-1 rounded-full text-sm font-bold tracking-wide shadow-sm inline-block mb-4 border border-primary/10">線上限定活動</span>
-        <h2 class="text-4xl font-extrabold text-on-background font-headline mb-6">女力潛能測驗 ＆ 問卷抽獎</h2>
-        <p class="text-lg text-on-surface-variant font-body mb-10">
-            完成線上互動測驗，發掘妳的潛藏女力特質！填寫活動問卷還有機會抽中限量女孩日專屬好禮。
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <button class="bg-white text-primary px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all btn-bounce border border-primary/10">
-                開始女力測驗
-            </button>
-            <button class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl transition-all btn-bounce">
-                填寫滿意度問卷
-            </button>
+<div class="flex justify-center space-x-6 text-sm font-medium font-body text-slate-500">
+<a class="hover:text-pink-600 transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[20px]">public</span> Facebook</a>
+<a class="hover:text-pink-600 transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span> Instagram</a>
+<a class="hover:text-pink-600 transition-colors flex items-center gap-1" href="#"><span class="material-symbols-outlined text-[20px]">play_circle</span> YouTube</a>
+<a class="hover:text-pink-600 transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="text-sm text-slate-500 font-body">
+            © 2026 Hualien Girls' Day. Let your dreams be what makes you shine.
         </div>
-    </div>
-</section>
+</footer>
+</body></html>
